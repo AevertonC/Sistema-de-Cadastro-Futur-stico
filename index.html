@@ -8,31 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Sistema de Cadastro Para Entrar no Futuro</h1>
+        <h1>Cadastro Para o Futuro</h1>
+        <p>Crie sua identidade futurística e entre para a próxima era!</p>
     </header>
     <main>
+        <!-- Formulário de cadastro -->
         <form id="cadastroForm">
             <label for="name">Nome:</label>
             <input type="text" id="name" placeholder="Digite o nome" required>
-
             <label for="idade">Idade:</label>
             <input type="number" id="idade" placeholder="Digite sua idade" required min="1">
-
-            <label for="tipo">Tipo de raça futurística:</label>
-            <input type="text" id="tipo" placeholder="Digite a raça" required>
-
+            <label for="tipo">Tipo de Raça Futurística:</label>
+            <input type="text" id="tipo" placeholder="Digite o tipo de raça" required>
+            <p id="formError" class="error"></p>
             <button type="submit">Cadastrar</button>
         </form>
 
-         <!-- Seção de edição -->
-         <section id="editSection" class="hidden">
+        <!-- Seção de edição -->
+        <section id="editSection" class="hidden">
             <h2>Editar Cadastro</h2>
             <form id="editForm">
                 <label for="editName">Nome:</label>
                 <input type="text" id="editName" required>
                 <label for="editIdade">Idade:</label>
                 <input type="number" id="editIdade" required min="1">
-                <label for="editTipo">Tipo de raça futurística:</label>
+                <label for="editTipo">Tipo de Raça Futurística:</label>
                 <input type="text" id="editTipo" required>
                 <p id="editError" class="error"></p>
                 <button type="submit">Salvar</button>
@@ -40,40 +40,24 @@
             </form>
         </section>
 
+        <!-- Lista de cadastros -->
         <section>
-            <h2>Lista de Cadastros Para o Futuro</h2>
-            <table id="cadastroTable">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Idade</th>
-                        <th>Raça</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+            <h2>Lista de Cadastros</h2>
+            <div id="cadastroTableContainer">
+                <table id="cadastroTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Raça</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </section>
     </main>
-
-    <!-- Modal de Edição -->
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <h2>Editar Cadastro</h2>
-            <label for="editName">Nome:</label>
-            <input type="text" id="editName" required>
-
-            <label for="editIdade">Idade:</label>
-            <input type="number" id="editIdade" required min="1">
-
-            <label for="editTipo">Tipo de raça futurística:</label>
-            <input type="text" id="editTipo" required>
-
-            <button id="saveEdit">Salvar</button>
-            <button id="cancelEdit">Cancelar</button>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
