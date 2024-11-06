@@ -24,6 +24,22 @@
             <button type="submit">Cadastrar</button>
         </form>
 
+         <!-- Seção de edição -->
+         <section id="editSection" class="hidden">
+            <h2>Editar Cadastro</h2>
+            <form id="editForm">
+                <label for="editName">Nome:</label>
+                <input type="text" id="editName" required>
+                <label for="editIdade">Idade:</label>
+                <input type="number" id="editIdade" required min="1">
+                <label for="editTipo">Tipo de raça futurística:</label>
+                <input type="text" id="editTipo" required>
+                <p id="editError" class="error"></p>
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="cancelarEdicao()">Cancelar</button>
+            </form>
+        </section>
+
         <section>
             <h2>Lista de Cadastros Para o Futuro</h2>
             <table id="cadastroTable">
