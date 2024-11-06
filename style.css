@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da página */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #1a1a2e);
+    color: #00ff99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Estilo do cabeçalho */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #f500ff;
+    font-size: 1.8em;
+    text-shadow: 0 0 8px rgba(245, 0, 255, 0.7), 0 0 12px rgba(245, 0, 255, 0.5);
+}
+
+/* Área principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Formulário de cadastro */
+form {
+    background: rgba(30, 30, 60, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2), 0 0 10px rgba(255, 0, 150, 0.2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00ff99;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00ff99;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2a2a3d;
+    color: #00ff99;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #00ff99;
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #008080;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+    background: rgba(30, 30, 60, 0.9);
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2), 0 0 10px rgba(255, 0, 150, 0.2);
+    border-radius: 8px;
+    border: 1px solid #00ff99;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: center;
+    color: #00ff99;
+}
+
+th {
+    background-color: #ff00ff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(40, 40, 70, 0.5);
+}
+
+/* Botões de ação */
+button.excluir {
+    background-color: #ff0044;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.excluir:hover {
+    background-color: #d4003b;
+}
+
+button.editar {
+    background: linear-gradient(135deg, #00ffff, #00ff99);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.editar:hover {
+    background-color: #00b38f;
+}
